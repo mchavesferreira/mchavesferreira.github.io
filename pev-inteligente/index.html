@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a6656" />
+  <meta name="description" content="Painel demonstrativo de monitoramento IoT de Pontos de Entrega Voluntária de vidro." />
+  <title>PEV Inteligente | Monitoramento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoaXMJ2a5P6S0=" crossorigin="" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-icon">♻</div><div><strong>PEV Inteligente</strong><small>Monitoramento de resíduos</small></div></div>
+      <div class="side-label">PLATAFORMA</div>
+      <nav aria-label="Navegação principal"><a class="nav-item active" href="#visao-geral">▦ <span>Visão geral</span></a><a class="nav-item" href="#mapa-secao">◉ <span>Mapa dos PEVs</span></a><a class="nav-item" href="#unidades">▤ <span>Unidades</span></a><a class="nav-item" href="#analise">▥ <span>Histórico</span></a></nav>
+      <div class="side-bottom"><div class="partner-box"><div class="partner-dot"></div><div><b>IFSP · SAEC</b><span>Projeto demonstrativo</span></div></div><p>Smart Campus · Catanduva/SP</p></div>
+    </aside>
+    <div class="main-area">
+      <header class="topbar"><button type="button" class="icon-btn menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button><span class="breadcrumb">Projetos <span>/</span> PEV Inteligente <span>/</span> <b>Painel</b></span><div class="top-actions"><span class="demo-pill" id="modeBadge">● Modo demonstração</span><button class="icon-btn" id="themeBtn" title="Alternar tema" aria-label="Alternar tema">☾</button></div></header>
+      <main id="visao-geral">
+        <div class="heading"><div><div class="eyebrow">GESTÃO INTELIGENTE DE RESÍDUOS</div><h1>Visão geral <span class="heading-leaf">✳</span></h1><p>Monitore o enchimento, a localização e as condições dos pontos de coleta de vidro.</p></div><div class="heading-actions"><span class="last-updated" id="updatedAt">Aguardando dados</span><button class="btn btn-outline" id="exportBtn">↓ Exportar CSV</button><button class="btn btn-primary" id="refreshBtn">↻ Atualizar</button></div></div>
+        <section class="metrics" aria-label="Indicadores do sistema"><article class="metric"><span>PEVs monitorados</span><div class="metric-value" id="metricTotal">—</div><small><i class="marker teal"></i>Unidades cadastradas</small><div class="metric-icon">▤</div></article><article class="metric"><span>Enchimento médio</span><div class="metric-value" id="metricAverage">—</div><small><i class="marker blue"></i>Capacidade utilizada</small><div class="metric-icon">◴</div></article><article class="metric"><span>Coletas prioritárias</span><div class="metric-value" id="metricCritical">—</div><small><i class="marker amber"></i>Enchimento ≥ 80%</small><div class="metric-icon">⚑</div></article><article class="metric"><span>Alertas ativos</span><div class="metric-value" id="metricAlerts">—</div><small><i class="marker rose"></i>Telemetria e segurança</small><div class="metric-icon">♧</div></article></section>
+        <section class="dashboard-grid" id="mapa-secao"><div class="panel map-panel"><div class="panel-head"><div><h2>Localização dos PEVs</h2><p>Distribuição dos pontos de entrega voluntária</p></div><span class="subtle-label">Catanduva · SP</span></div><div id="map" aria-label="Mapa interativo com os PEVs"></div><div class="map-legend"><span><i class="dot green"></i>Regular (&lt; 60%)</span><span><i class="dot yellow"></i>Atenção (60–79%)</span><span><i class="dot red"></i>Prioritário (≥ 80%)</span></div></div><div class="panel alert-panel"><div class="panel-head"><div><h2>Central de alertas</h2><p>Ocorrências que exigem atenção</p></div><span class="count-pill" id="alertCount">0</span></div><div class="alert-list" id="alertList" aria-live="polite"></div><div class="alert-foot"><span>Dados de demonstração ou API configurada</span></div></div></section>
+        <section class="panel unit-panel" id="unidades"><div class="panel-head units-head"><div><h2>Unidades monitoradas</h2><p>Estado atual dos contêineres conectados</p></div><div class="filters"><label class="sr-only" for="searchInput">Buscar PEV</label><input id="searchInput" type="search" placeholder="⌕  Buscar unidade..." /><label class="sr-only" for="statusFilter">Filtrar por status</label><select id="statusFilter"><option value="all">Todos os status</option><option value="regular">Regular</option><option value="atencao">Atenção</option><option value="prioritario">Prioritário</option></select></div></div><div class="table-wrap"><table><thead><tr><th>UNIDADE</th><th>LOCALIZAÇÃO</th><th>NÍVEL DE ENCHIMENTO</th><th>BATERIA</th><th>ÚLTIMA LEITURA</th><th>STATUS</th><th>DETALHES</th></tr></thead><tbody id="unitRows"></tbody></table></div><div class="table-footer"><span id="rowCount">—</span><span>Atualização automática a cada 60 s (modo API)</span></div></section>
+        <section class="bottom-grid" id="analise"><div class="panel history-panel"><div class="panel-head"><div><h2>Histórico de enchimento</h2><p>Evolução do nível por unidade</p></div><select id="historySelect" aria-label="Escolher PEV"></select></div><div class="chart-holder"><canvas id="historyChart" aria-label="Gráfico de histórico de enchimento"></canvas></div></div><div class="panel info-panel"><div class="panel-head"><div><h2>Sobre o projeto</h2><p>Tecnologia para cidades sustentáveis</p></div></div><div class="info-symbol">♻</div><p>O <b>PEV Inteligente</b> é um conceito de monitoramento de contêineres de vidro desenvolvido no contexto da parceria IFSP Catanduva e SAEC.</p><div class="feature"><span>◉</span> Sensor de nível ultrassônico</div><div class="feature"><span>⌁</span> Rede LoRa / telemetria</div><div class="feature"><span>⚑</span> Alertas de inclinação e vibração</div><div class="feature"><span>☀</span> Alimentação por energia solar</div><div class="disclaimer">Esta página utiliza dados fictícios no modo demonstração. Não representa o estado real de contêineres da SAEC.</div></div></section>
+        <footer>PEV Inteligente · Interface demonstrativa · IFSP Catanduva / SAEC <span>Versão 2.0 · 2026</span></footer>
+      </main>
+    </div>
+  </div>
+  <dialog id="detailDialog" class="detail-dialog"><div class="dialog-head"><h2 id="detailTitle">Detalhes da unidade</h2><button class="icon-btn" id="dialogClose" aria-label="Fechar">✕</button></div><div id="detailContent"></div><div class="dialog-foot"><button class="btn btn-primary" id="dialogOk">Fechar</button></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
