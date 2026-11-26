@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project name="/Users/matheusseverino/Documents/www/blockly-z80/blockly-z80.clpprj">
+ <settings>
+  <PM_URL><![CDATA[http://localhost/blockly-z80]]></PM_URL>
+  <PM_HOME_URL><![CDATA[http://localhost/blockly-z80]]></PM_HOME_URL>
+  <PM_LIBS><![CDATA[]]></PM_LIBS>
+  <PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION>
+  <PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR>
+  <PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE>
+ </settings>
+ <removed value=";"/>
+ <added value=""/>
+ <lastopfiles>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/logic.js"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/inputoutput.js"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/inputoutput.js"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/logic.js"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/variables.js"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/math.js"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/text.js"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/procedures.js"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/loops.js"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/lists.js"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/demos/commands/blockly-frame.html"/>
+  <lastactivefile name=""/>
+ </lastopfiles>
+ <todoblock>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks/math.js">
+   <todo name="TODO: Combine these messages instead of using concatenation." pos="9;258"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks/variables.js">
+   <todo name="TODO: Combine these messages instead of using concatenation." pos="9;96"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/block.js">
+   <todo name="TODO: Improve truncation so that text from this block is given priority." pos="5;1482"/>
+   <todo name="TODO: Handle FieldImage better." pos="5;1483"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/block_svg.js">
+   <todo name="TODO: Align inline field rows (left/right/centre)." pos="9;841"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/blockly.js">
+   <todo name="TODO: Add keyboard support for cursoring around the context menu." pos="3;365"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/blocks.js">
+   <todo name="TODO: Add Fields and statement stacks." pos="8;56"/>
+   <todo name="ToDomFunc {Function} TODO desc." pos="16;86"/>
+   <todo name="TODO desc." pos="37;87"/>
+   <todo name="TODO desc." pos="41;88"/>
+   <todo name="TODO: Add more." pos="21;92"/>
+   <todo name="TODO: Write code for other input types." pos="11;150"/>
+   <todo name="TODO: Add domToMutation and customContextMenu." pos="3;178"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/field.js">
+   <todo name="TODO(scr): Fix circular dependencies" pos="1;30"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/field_textinput.js">
+   <todo name="TODO: Handle cases like 'ten', '1.203,14', etc." pos="3;255"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/input.js">
+   <todo name="TODO(scr): Fix circular dependencies" pos="1;28"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/procedures.js">
+   <todo name="TODO(scr): Fix circular dependencies" pos="1;28"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/realtime.js">
+   <todo name="TODO: The following is for debugging.  It should never actually happen." pos="5;330"/>
+   <todo name="TODO: Uncomment this when undo/redo are fixed." pos="3;453"/>
+   <todo name="TODO: Uncomment this when undo/redo are fixed." pos="3;698"/>
+   <todo name="TODO: I would have liked to set the style for the authButtonDiv in css.js" pos="3;755"/>
+   <todo name="TODO(): We'd like to use the realtime API compound operations as in the" pos="3;823"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/variables.js">
+   <todo name="TODO(scr): Fix circular dependencies" pos="1;30"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/workspace.js">
+   <todo name="TODO(scr): Fix circular dependencies" pos="1;28"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/xml.js">
+   <todo name="TODO(scr): Fix circular dependencies" pos="1;28"/>
+   <todo name="TODO: The following is for debugging.  It should never actually happen." pos="5;247"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/soy/soyutils.js">
+   <todo name="TODO: Consider separating rules, declarations, and values into" pos="3;673"/>
+   <todo name="TODO: This function is probably necessary, either externally or internally" pos="1;1243"/>
+   <todo name="TODO: Perhaps we should just ignore the contentKind property and instead" pos="3;1571"/>
+   <todo name="TODO: Dynamically inserting attributes that aren't marked as trusted is" pos="3;1811"/>
+   <todo name="TODO: It might still be worthwhile to normalize it to remove" pos="5;1863"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/dart.js">
+   <todo name="TODO: This is a quick hack.  Replace with goog.string.quote" pos="3;144"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/javascript.js">
+   <todo name="TODO: This is a quick hack.  Replace with goog.string.quote" pos="3;164"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/python.js">
+   <todo name="TODO: This is a quick hack.  Replace with goog.string.quote" pos="3;145"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/math.js">
+   <todo name="TODO: Combine these messages instead of using concatenation." pos="9;258"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/variables.js">
+   <todo name="TODO: Combine these messages instead of using concatenation." pos="9;96"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/generators/z80.js">
+   <todo name="TODO: This is a quick hack.  Replace with goog.string.quote" pos="3;194"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/asm.js">
+   <todo name="TODO: write bytecodes properly" pos="3;238"/>
+   <todo name="TODO: this is a very weak space handler" pos="4;428"/>
+  </todofile>
+  <todofile name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/shared.js">
+   <todo name="TODO: scan structs" pos="2;2"/>
+  </todofile>
+ </todoblock>
+ <dbgurls/>
+ <filescache>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/tests/test.html" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/tests/optimizer.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/util.js" crc="1410294692000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/shared.js" crc="1410294692000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/opcodes.js" crc="1579585273322"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/log.js" crc="1410294692000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/instr.js" crc="1410294692000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/float.js" crc="1410294692000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/file.js" crc="1410294692000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/faq.html" crc="1410294692000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/editor.js" crc="1410294692000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/bit.html" crc="1410294692000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/msx-bitz80/asm.js" crc="1410294692000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/js/zip/zip.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/js/zip/inflate.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/js/zip/deflate.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/js/underscore-min.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/js/prism.z80asm.js" crc="1579827027574"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/js/prism.nolang.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/js/prism.css" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/js/jquery-2.1.1.min.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/variables.js" crc="1579840697948"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/text.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/tempo.js" crc="1579663062368"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/procedures.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/math.js" crc="1579829789306"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/loops.js" crc="1577919040118"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/logic.js" crc="1579833311339"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/lists.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/inputoutput.js" crc="1579840136298"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/hardware.js" crc="1579665587233"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/colour.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/atmega/base.js" crc="1579648251192"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/generators/z80.js" crc="1579833702450"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/FileSaver.js/FileSaver.js" crc="1577909385228"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/demos/commands/index.html" crc="1577912604399"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/demos/commands/blockly-z80.js" crc="1579648326008"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/demos/commands/blockly-z80.css" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/demos/commands/blockly-frame.html" crc="1579864721303"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/demos/commands/bitz80-frame.html" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/variables.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/text.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/tempo.js" crc="1579663127489"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/procedures.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/math.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/loops.js" crc="1579864453647"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/logic.js" crc="1579837993203"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/lists.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/inputoutput.js" crc="1579864273031"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/hardware.js" crc="1579665633985"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/colour.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blocks/base.js" crc="1571499038000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/variables.xml" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/unittest_python.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/unittest_javascript.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/unittest_dart.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/unittest.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/text.xml" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/procedures.xml" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/math.xml" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/loops3.xml" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/loops2.xml" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/loops1.xml" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/logic.xml" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/lists.xml" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generators/colour.xml" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/playground.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/names_test.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/generator_test.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/blockly_test.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/tests/blockly_test.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/zh-hant.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/zh-hans.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/vi.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/uk.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/tr.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/tlh.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/tl.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/th.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/synonyms.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/sv.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/sr.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/sq.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/sk.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/sc.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/ru.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/ro.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/qqq.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/pt.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/pt-br.json" crc="1579833933653"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/pms.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/pl.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/oc.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/nl.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/nb.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/ms.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/mk.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/lt.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/lrc.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/lb.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/ko.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/ja.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/it.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/is.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/id.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/ia.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/hu.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/hrx.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/hi.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/he.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/fr.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/fi.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/fa.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/es.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/en.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/el.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/de.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/da.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/cs.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/ca.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/br.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/bg.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/be-tarask.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/bcc.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/az.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/json/ar.json" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/zh-hant.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/zh-hans.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/vi.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/uk.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/tr.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/tlh.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/tl.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/th.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/sv.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/sr.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/sq.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/sk.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/sc.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/ru.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/ro.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/pt.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/pt-br.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/pms.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/pl.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/oc.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/no.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/nl.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/nb.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/ms.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/mk.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/lt.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/lrc.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/lb.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/ko.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/ja.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/it.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/is.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/id.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/ia.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/hu.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/hrx.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/hi.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/he.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/fr.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/fi.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/fa.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/es.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/en_us.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/en.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/el.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/de.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/da.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/cs.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/ca.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/br.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/bg.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/be-tarask.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/bcc.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/az.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/az-latn.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/js/ar.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/msg/messages.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/i18n/xliff_to_json.py" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/i18n/tests.py" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/i18n/status.py" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/i18n/status.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/i18n/json_to_js.py" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/i18n/js_to_json.py" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/i18n/dedup_json.py" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/i18n/create_messages.py" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/i18n/common.py" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/python/variables.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/python/text.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/python/procedures.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/python/math.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/python/loops.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/python/logic.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/python/lists.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/python/colour.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/javascript/variables.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/javascript/text.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/javascript/procedures.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/javascript/math.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/javascript/loops.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/javascript/logic.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/javascript/lists.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/javascript/colour.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/dart/variables.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/dart/text.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/dart/procedures.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/dart/math.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/dart/loops.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/dart/logic.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/dart/lists.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/dart/colour.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/python.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/javascript.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/generators/dart.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/toolbox/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/storage/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/rtl/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/realtime/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/soy/soyutils.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/zh-hant.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/zh-hans.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/vi.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/uk.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/tr.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/th.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/sv.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/sc.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/ru.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/ro.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/pt-br.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/pms.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/pl.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/nl.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/nb.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/ms.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/ko.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/ja.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/it.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/is.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/ia.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/hu.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/hrx.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/he.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/fr.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/fa.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/es.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/en.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/el.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/de.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/da.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/ca.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/br.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/be-tarask.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/generated/ar.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/style.css" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/slider.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/README.txt" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/plane.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/plane/blocks.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/maxBlocks/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/interpreter/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/interpreter/acorn_interpreter.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/iframe/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/iframe/frame.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/graph/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/generator/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/fixed/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/commands/index.html" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/commands/blockly-z80.js" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/commands/blockly-z80.css" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/commands/blockly-frame.html" crc="1579836804459"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/commands/bitz80-frame.html" crc="1418931108000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/zh-hant.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/zh-hans.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/vi.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/uk.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/tr.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/tlh.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/th.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/sv.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/sr.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/sk.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/sc.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/ru.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/ro.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/pt-br.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/pms.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/pl.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/oc.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/nl.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/nb.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/ms.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/mk.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/ko.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/ja.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/it.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/is.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/ia.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/hu.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/hrx.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/he.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/fr.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/fa.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/es.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/en.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/el.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/de.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/da.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/cs.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/ca.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/br.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/be-tarask.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/msg/ar.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/style.css" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/code/code.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/blockfactory/preview.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/blockfactory/preview.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/blockfactory/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/blockfactory/factory.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/blockfactory/blocks.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/prettify.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/prettify.css" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/demos/index.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/xml.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/workspace.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/widgetdiv.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/warning.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/variables.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/utils.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/trashcan.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/tooltip.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/toolbox.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/scrollbar.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/realtime.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/realtime-client-utils.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/procedures.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/names.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/mutator.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/msg.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/input.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/inject.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/icon.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/generator.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/flyout.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/field_variable.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/field_textinput.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/field_label.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/field_image.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/field_dropdown.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/field_colour.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/field_checkbox.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/field_angle.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/field.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/css.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/contextmenu.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/connection.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/comment.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/bubble.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/blocks.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/blockly.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/block_svg.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/core/block.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks/variables.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks/text.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks/procedures.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks/math.js" crc="1578969595375"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks/loops.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks/logic.js" crc="1579836783106"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks/lists.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks/colour.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks/base.js" crc="1571499038000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/appengine/storage.py" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/appengine/storage.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/appengine/robots.txt" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/appengine/redirect.html" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/appengine/README.txt" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/appengine/index_redirect.py" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/python_compressed.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/javascript_compressed.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/dart_compressed.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/build.py" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blocks_compressed.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blockly_uncompressed.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/blockly/blockly_compressed.js" crc="1416607622000"/>
+  <file name="/Users/matheusseverino/Documents/www/blockly-z80/index.html" crc="1418931108000"/>
+ </filescache>
+</project>
