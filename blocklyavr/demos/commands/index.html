@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../blockly/appengine/favicon.ico">
+  <link rel="stylesheet" href="blockly-atmega.css">
+  <script src="blockly-atmega.js"></script>
+  <title>Laboratório AVR · ATmega328P</title>
+</head>
+<body class="studio">
+  <header class="toolbar">
+    <div class="identity">
+      <div class="brand">
+        <h1>Laboratório AVR</h1>
+        <small class="author">Desenvolvido por: Prof. Marcos Chaves/IFSP Catanduva</small>
+      </div>
+      <span>ATmega328P · 16 MHz</span>
+    </div>
+    <div class="actions">
+      <button id="load-design" type="button" disabled>Abrir projeto</button>
+      <button id="save-design" type="button" disabled>Salvar projeto</button>
+      <button id="save-lib" type="button" disabled title="Baixe lib328Pv03.inc para a pasta do projeto quando o programa incluir a biblioteca">Baixar lib328Pv03.inc</button>
+      <button id="save-asm" class="primary" type="button" disabled>Baixar .asm</button>
+      <input id="design-file-input" type="file" accept=".xml,application/xml,text/xml" hidden>
+    </div>
+  </header>
+  <div id="file-message" role="alert" hidden></div>
+  <main>
+    <section class="workspace panel" aria-labelledby="workspace-title">
+      <h2 id="workspace-title">Blocos</h2>
+      <iframe id="blockly-editor" src="blockly-frame.html" title="Área de programação em blocos"></iframe>
+    </section>
+    <div class="inspector">
+      <section class="assembly panel" aria-labelledby="assembly-title">
+        <h2 id="assembly-title">Assembly AVR</h2>
+        <div id="diagnostics" role="alert" hidden></div>
+        <div id="asm-lines" aria-label="Linhas do programa Assembly" tabindex="0"></div>
+      </section>
+      <section class="details panel" aria-labelledby="details-title">
+        <h2 id="details-title">Instruções do bloco</h2>
+        <div id="explanations">Selecione um bloco ou uma linha do Assembly para ver as instruções.</div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
