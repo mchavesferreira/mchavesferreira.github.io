@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blocos AVR</title>
+  <link rel="stylesheet" href="blockly-atmega.css">
+  <script src="../../blockly/blockly_compressed.js"></script>
+  <script src="../../js/avr/mobile-touch.js"></script>
+  <script src="../../blockly/msg/js/pt-br.js"></script>
+  <script src="../../js/avr/pins.js"></script>
+  <script src="../../blocks/avr_program.js"></script>
+  <script src="../../blocks/avr_gpio.js"></script>
+  <script src="../../blocks/avr_values.js"></script>
+  <script src="../../blocks/avr_control.js"></script>
+  <script src="../../blocks/avr_time.js"></script>
+  <script src="../../blocks/avr_peripherals.js"></script>
+  <script src="../../js/avr/workspace-model.js"></script>
+  <script src="../../js/avr/asm-generator.js"></script>
+  <script src="blockly-atmega.js"></script>
+</head>
+<body class="blocks-frame">
+  <xml id="toolbox" hidden>
+    <category name="Início">
+      <block type="avr_start"></block>
+    </category>
+    <category name="Pinos">
+      <block type="avr_pin_mode"></block>
+      <block type="avr_digital_write"></block>
+      <block type="avr_digital_toggle"></block>
+      <block type="avr_digital_read"></block>
+    </category>
+    <category name="Valores">
+      <block type="avr_literal"></block>
+      <block type="avr_add"></block>
+      <block type="avr_subtract"></block>
+    </category>
+    <category name="Variáveis">
+      <block type="avr_assign"></block>
+      <block type="avr_variable_read"></block>
+    </category>
+    <category name="Lógica">
+      <block type="avr_if"></block>
+      <block type="avr_if_else"></block>
+      <block type="avr_compare"></block>
+    </category>
+    <category name="Repetição">
+      <block type="avr_forever"></block>
+      <block type="avr_repeat_count"></block>
+    </category>
+    <category name="Tempo">
+      <block type="avr_delay_ms"></block>
+      <block type="avr_delay_s"></block>
+    </category>
+    <category name="Periféricos">
+      <block type="avr_analog_read"></block>
+      <block type="avr_pwm_write"></block>
+      <block type="avr_timer0_start"></block>
+      <block type="avr_timer1_start"></block>
+      <block type="avr_timer2_start"></block>
+      <block type="avr_timer0_isr"></block>
+      <block type="avr_timer1_isr"></block>
+      <block type="avr_timer2_isr"></block>
+      <block type="avr_lcd_init"></block>
+      <block type="avr_lcd_clear"></block>
+      <block type="avr_lcd_cursor"></block>
+      <block type="avr_lcd_write_char"></block>
+      <block type="avr_lcd_write_number"></block>
+      <block type="avr_usart_init"></block>
+      <block type="avr_usart_transmit_char"></block>
+      <block type="avr_usart_transmit_number"></block>
+      <block type="avr_usart_receive_char"></block>
+      <block type="avr_display7_write"></block>
+      <block type="avr_display7_off"></block>
+      <block type="avr_eeprom_write"></block>
+      <block type="avr_eeprom_read"></block>
+    </category>
+  </xml>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (window.AvrMobileTouch && typeof window.AvrMobileTouch.patchBlockly === 'function') {
+        window.AvrMobileTouch.patchBlockly(window.Blockly, window);
+      }
+      Blockly.inject(document.body, {
+        toolbox: document.getElementById('toolbox'),
+        media: '../../blockly/media/',
+        sounds: false,
+        disable: false
+      });
+      function safeResize() {
+        if (!window.Blockly || !Blockly.mainWorkspace || !Blockly.svg) return;
+        try {
+          if (Blockly.Toolbox && typeof Blockly.Toolbox.position_ === 'function' && Blockly.Toolbox.HtmlDiv) {
+            Blockly.Toolbox.position_();
+          }
+          if (typeof Blockly.svgResize === 'function') {
+            Blockly.svgResize();
+          }
+        } catch (e) {}
+      }
+      var resizeTimer = null;
+      function scheduleResize() {
+        safeResize();
+        if (resizeTimer !== null) window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(function () {
+          resizeTimer = null;
+          safeResize();
+        }, 120);
+      }
+      window.addEventListener('resize', scheduleResize);
+      window.addEventListener('orientationchange', scheduleResize);
+      var attached = false;
+      try {
+        if (window.parent && window.parent !== window && window.parent.AvrEditor) {
+          window.parent.AvrEditor.attach(window);
+          attached = true;
+        }
+      } catch (e) {
+        attached = false;
+      }
+      if (!attached && window.AvrEditor && window.AvrEditor.attachFrameBridge) {
+        window.AvrEditor.attachFrameBridge(window);
+      }
+    });
+  </script>
+</body>
+</html>
