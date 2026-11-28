@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="icon" href="../../blockly/appengine/favicon.ico">
+  <link rel="stylesheet" href="blockly-atmega.css">
+  <script src="../../js/avr/datasheet-catalog.js"></script>
+  <script src="../../js/avr/datasheet-diagrams.js"></script>
+  <script src="blockly-atmega.js"></script>
+  <title>Laboratório AVR · ATmega328P</title>
+</head>
+<body class="studio">
+  <header class="toolbar">
+    <div class="toolbar-top">
+      <div class="identity">
+        <div class="brand">
+          <h1>Laboratório AVR</h1>
+          <small class="author">Desenvolvido por: Prof. Marcos Chaves/IFSP Catanduva</small>
+        </div>
+        <span>ATmega328P · 16 MHz</span>
+      </div>
+      <button id="toggle-actions" class="menu-toggle" type="button" aria-expanded="false" aria-controls="toolbar-actions" aria-label="Abrir menu de ações">Menu</button>
+    </div>
+    <div id="toolbar-actions" class="actions">
+      <a id="open-guide" class="action-link" href="guia-didatico.html" target="_blank" rel="noopener">Livro Didático</a>
+      <button id="load-design" type="button" disabled>Abrir projeto</button>
+      <button id="save-design" type="button" disabled>Salvar projeto</button>
+      <button id="save-lib" type="button" disabled title="Baixe lib328Pv03.inc para a pasta do projeto quando o programa incluir a biblioteca">Baixar lib328Pv03.inc</button>
+      <button id="save-asm" class="primary" type="button" disabled>Baixar .asm</button>
+      <input id="design-file-input" type="file" accept=".xml,application/xml,text/xml" hidden>
+    </div>
+  </header>
+  <div id="file-message" role="alert" hidden></div>
+  <nav id="mobile-view-bar" class="mobile-view-bar" aria-label="Alternar visualização">
+    <button id="view-split" type="button" class="view-tab is-active" data-view="split" aria-pressed="true">Dividido</button>
+    <button id="view-blocks" type="button" class="view-tab" data-view="blocks" aria-pressed="false">Blocos</button>
+    <button id="view-assembly" type="button" class="view-tab" data-view="assembly" aria-pressed="false">Assembly <span id="view-assembly-badge" class="error-badge" aria-label="Erros nos blocos" hidden></span></button>
+    <button id="view-details" type="button" class="view-tab" data-view="details" aria-pressed="false">Explicação</button>
+  </nav>
+  <main id="studio-main" data-mobile-view="split" data-inspector-tab="assembly">
+    <section class="workspace panel" aria-labelledby="workspace-title">
+      <div class="panel-header">
+        <h2 id="workspace-title">Blocos</h2>
+        <button id="center-start" class="panel-action" type="button" disabled title="Centralizar o bloco selecionado ou o bloco Ao iniciar ATmega328P">Centralizar início</button>
+      </div>
+      <iframe id="blockly-editor" src="blockly-frame.html" title="Área de programação em blocos"></iframe>
+    </section>
+    <div class="inspector">
+      <div id="inspector-tabs" class="inspector-tabs" role="tablist" aria-label="Painéis do inspetor">
+        <button id="tab-assembly" type="button" class="inspector-tab is-active" role="tab" data-inspector-tab="assembly" aria-selected="true" aria-controls="panel-assembly">Assembly AVR <span id="tab-assembly-badge" class="error-badge" aria-label="Erros nos blocos" hidden></span></button>
+        <button id="tab-details" type="button" class="inspector-tab" role="tab" data-inspector-tab="details" aria-selected="false" aria-controls="panel-details">Instruções do bloco</button>
+      </div>
+      <section id="panel-assembly" class="assembly panel" aria-labelledby="assembly-title">
+        <h2 id="assembly-title">Assembly AVR <span id="assembly-error-badge" class="error-badge" aria-label="Erros nos blocos" hidden></span></h2>
+        <div id="diagnostics" role="alert" hidden></div>
+        <div id="asm-lines" aria-label="Linhas do programa Assembly" tabindex="0"></div>
+      </section>
+      <section id="panel-details" class="details panel" aria-labelledby="details-title">
+        <h2 id="details-title">Instruções do bloco</h2>
+        <div id="explanations">Selecione um bloco ou uma linha do Assembly para ver as instruções.</div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

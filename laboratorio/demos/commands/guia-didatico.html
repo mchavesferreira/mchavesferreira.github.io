@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="icon" href="../../blockly/appengine/favicon.ico">
+  <link rel="stylesheet" href="guia-didatico.css">
+  <script src="../../js/avr/datasheet-catalog.js"></script>
+  <script src="../../js/avr/datasheet-diagrams.js"></script>
+  <script src="guia-didatico.js"></script>
+  <title>Livro Didático AVR · ATmega328P (DS40002061B)</title>
+</head>
+<body class="guide-page">
+  <header class="guide-header">
+    <div class="guide-header-top">
+      <div class="guide-brand">
+        <h1>Livro Didático AVR · ATmega328P</h1>
+        <small class="guide-author">Desenvolvido por: Prof. Marcos Chaves/IFSP Catanduva</small>
+      </div>
+      <span class="datasheet-badge">Datasheet oficial: Microchip DS40002061B</span>
+    </div>
+    <div class="guide-actions">
+      <button id="toggle-toc" type="button" class="guide-btn" aria-expanded="false" aria-controls="guide-toc">Sumário</button>
+      <button id="print-guide" type="button" class="guide-btn">Imprimir / Salvar PDF</button>
+      <a id="back-editor" class="guide-link-btn" href="index.html">Voltar ao Editor</a>
+    </div>
+  </header>
+
+  <div class="guide-layout">
+    <aside id="guide-toc" class="guide-toc" aria-label="Sumário dos capítulos">
+      <div class="toc-search-box">
+        <label class="toc-search-label" for="guide-search">Buscar registrador, bloco ou tema</label>
+        <div class="toc-search-row">
+          <input id="guide-search" type="search" placeholder="Ex.: ADMUX, TIMSK1, HD44780..." autocomplete="off">
+          <button id="clear-search" type="button" class="clear-btn" hidden>Limpar</button>
+        </div>
+        <p id="search-status" class="search-status" aria-live="polite"></p>
+      </div>
+      <nav aria-label="Capítulos do Livro Didático">
+        <ol id="toc-list" class="toc-list"></ol>
+      </nav>
+    </aside>
+
+    <div class="guide-content-wrap">
+      <main id="guide-chapters" class="guide-chapters" tabindex="-1"></main>
+      <p id="empty-search" class="empty-search" hidden>Nenhum capítulo encontrado para o termo pesquisado.</p>
+    </div>
+  </div>
+
+  <footer class="guide-footer">
+    <p>Material didático baseado no datasheet oficial <strong>Microchip ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B)</strong> e na biblioteca didática <code>lib328Pv03.inc</code>.</p>
+  </footer>
+</body>
+</html>
